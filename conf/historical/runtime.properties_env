@@ -1,0 +1,15 @@
+# General
+druid.service=${DRUID_SERVICE}
+druid.host=${DRUID_HOST}
+druid.port=${DRUID_SERVICE_PORT}
+
+druid.server.http.numThreads=9
+
+druid.segmentCache.locations=[{"path": "var/druid/segment-cache", "maxSize": 5368709120}]
+druid.server.maxSize=5368709120
+
+# Processing
+druid.processing.buffer.sizeBytes=512000000
+druid.processing.numThreads=21
+
+druid.query.topN.minTopNThreshold=100

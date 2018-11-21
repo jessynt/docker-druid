@@ -1,0 +1,17 @@
+# General
+druid.service=${DRUID_SERVICE}
+druid.host=${DRUID_HOST}
+druid.port=${DRUID_SERVICE_PORT}
+
+# HTTP
+druid.broker.http.numConnections=5
+druid.server.http.numThreads=9
+
+druid.broker.cache.useCache=true
+druid.broker.cache.populateCache=true
+druid.cache.type=local
+druid.cache.sizeInBytes=10000000
+
+# Processing
+druid.processing.numThreads=21
+druid.processing.buffer.sizeBytes=512000000
