@@ -3,6 +3,7 @@ druid.selectors.indexing.serviceName=overlord
 druid.selectors.coordinator.serviceName=coordinator
 
 # Extensions
+druid.extensions.directory=/opt/druid/extensions
 druid.extensions.loadList=["druid-kafka-indexing-service", "postgresql-metadata-storage"]
 
 # Zookeeper
