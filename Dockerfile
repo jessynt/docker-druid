@@ -13,7 +13,8 @@ RUN curl "http://ftp.cuhk.edu.hk/pub/packages/apache.org/incubator/druid/$DRUID_
 RUN java -cp "lib/*" -Ddruid.extensions.directory="extensions" org.apache.druid.cli.Main tools \
 	pull-deps \
 		--no-default-hadoop \
-		-c org.apache.druid.extensions.contrib:kafka-emitter
+		-c org.apache.druid.extensions.contrib:kafka-emitter \
+		-c org.apache.druid.extensions.contrib:druid-google-extensions
 
 COPY conf /opt/druid/conf/
 COPY docker-entrypoint.sh /docker-entrypoint.sh
